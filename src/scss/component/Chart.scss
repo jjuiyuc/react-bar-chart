@@ -1,0 +1,13 @@
+.chart-container {
+    border: 2px solid #dd1818dd;
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    .bar-chart {
+    }
+}

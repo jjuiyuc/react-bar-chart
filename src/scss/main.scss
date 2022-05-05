@@ -1,0 +1,86 @@
+@import-normalize;
+//font family
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Raleway:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+//css
+@import "modules";
+// @import "page";
+@import "component";
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $mint;
+    &.dark {
+        border-right: 3.5px solid $lightgrey;
+        background: black;
+    }
+}
+
+a {
+    text-decoration: none;
+    // color: inherit;
+}
+
+.flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.mt-s {
+    margin-top: 1.2rem;
+}
+.mb-2 {
+    margin-bottom: 1rem;
+}
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.App {
+    position: relative;
+}
+
+.hint {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.main-content {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border: solid 1px orange;
+}
+.main-container {
+    // width: 1440px;
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid steelblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
